@@ -15,5 +15,6 @@
     </properties>
     <modules>
         <module>snakeAndLadder</module>
+        <module>file-upload</module>
     </modules>
 </project>
