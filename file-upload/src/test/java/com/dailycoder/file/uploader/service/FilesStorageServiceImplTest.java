@@ -54,20 +54,19 @@ class FilesStorageServiceImplTest {
         assertTrue(Files.exists(savedFilePath));
     }
 
-//    @Test
-//    void save_shouldThrowExceptionOnDuplicateFile() throws IOException {
-//        when(mockFile.getInputStream()).thenReturn(getClass().getResourceAsStream("/test-file.txt"));
-//        String fileName = "test-file.txt";
-//
-//        filesStorageService.save(mockFile);
-//
-//        // Attempt to save the same file again
-//        assertThrows(RuntimeException.class, () -> filesStorageService.save(mockFile));
-//    }
+    @Test
+    void save_shouldThrowExceptionOnDuplicateFile() throws IOException {
+        when(mockFile.getInputStream()).thenReturn(getClass().getResourceAsStream("/test-file.txt"));
+        String fileName = "test-file.txt";
+
+        filesStorageService.save(mockFile);
+
+        // Attempt to save the same file again
+        assertThrows(RuntimeException.class, () -> filesStorageService.save(mockFile));
+    }
 
     @Test
     void load_shouldLoadResource() throws IOException {
-
         String fileName = "test-file.txt";
         Path filePath = testRoot.resolve(fileName);
         Files.createFile(filePath);

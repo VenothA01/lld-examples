@@ -7,6 +7,14 @@
     <groupId>com.dailycoder</groupId>
     <artifactId>LLD-practice</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.8.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <packaging>pom</packaging>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
