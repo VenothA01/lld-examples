@@ -26,5 +26,7 @@
         <module>file-upload</module>
         <module>test-containers-demo</module>
         <module>distributed-cache</module>
+        <module>food-delivery</module>
     </modules>
+
 </project>
