@@ -27,6 +27,10 @@
         <module>test-containers-demo</module>
         <module>distributed-cache</module>
         <module>food-delivery</module>
+        <module>functional-programming</module>
+        <module>Concurrency</module>
+        <module>spring-security</module>
+        <module>design-pattern</module>
     </modules>
 
 </project>
