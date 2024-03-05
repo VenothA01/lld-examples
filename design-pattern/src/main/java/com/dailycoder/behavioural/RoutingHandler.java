@@ -1,7 +1,11 @@
 package com.dailycoder.behavioural;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 interface Router{
 
@@ -87,7 +91,15 @@ public class RoutingHandler {
         }
     }
 
+
     public static void main(String[] args) {
+
+        int[] arr = {1,2,3,4,5};
+
+        Map<Integer,Long> map = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+        System.out.println(map);
+
+
         Message highPriorityMsg = new Message("Alert!", "high");
         Message mediumPriorityMsg = new Message("Warning!", "medium");
         Message lowPriorityMsg = new Message("Take a look!", "low");

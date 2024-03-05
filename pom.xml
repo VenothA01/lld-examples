@@ -31,6 +31,8 @@
         <module>Concurrency</module>
         <module>spring-security</module>
         <module>design-pattern</module>
+        <module>ParkingLot</module>
+        <module>reactive-programming</module>
     </modules>
 
 </project>
