@@ -24,7 +24,6 @@
     <modules>
         <module>snakeAndLadder</module>
         <module>file-upload</module>
-        <module>test-containers-demo</module>
         <module>distributed-cache</module>
         <module>food-delivery</module>
         <module>functional-programming</module>
